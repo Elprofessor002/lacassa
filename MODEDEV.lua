@@ -139,7 +139,7 @@ _redis = load_redis()
 print([[
 
 > CH › @revorbot
-~> DEVELOPER › @UU_IV
+~> DEVELOPER › @el_pro_f
 ]])
 sudos = dofile("./Info.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -165,7 +165,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1614375843,bot_id}
+sudo_users = {SUDO,839224120,bot_id}
 function SudoBot(msg)  
 local MODEDEV = false  
 for k,v in pairs(sudo_users) do  
@@ -232,7 +232,7 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1614375843) then  
+if tonumber(user_id) == tonumber(839224120) then  
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then  
 var = true  
@@ -259,7 +259,7 @@ return var
 end 
 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1614375843) then  
+if tonumber(user_id) == tonumber(839224120) then  
 var = ' Developer '
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -996,7 +996,7 @@ echo '*•━━━━━━━━━•*\n•{ مـده تـشغيـل الـس
 end
 if text == '•تحديث السورس•' and SudoBot(msg) then 
 os.execute('rm -rf MODEDEV.lua')
-os.execute('wget https://raw.githubusercontent.com/DEV-SONIC/Egy/main/MODEDEV.lua')
+os.execute('wget https://raw.githubusercontent.com/Elprofessor002/lacassa/main/MODEDEV.lua')
 send(msg.chat_id_, msg.id_,'• تم تحديث السورس')
 dofile('MODEDEV.lua')  
 end
@@ -2288,7 +2288,7 @@ end
 return false
 end
 os.execute('rm -rf MODEDEV.lua')
-os.execute('wget https://raw.githubusercontent.com/DEV-SONIC/Egy/main/MODEDEV.lua')
+os.execute('wget https://raw.githubusercontent.com/Elprofessor002/lacassa/main/MODEDEV.lua')
 send(msg.chat_id_, msg.id_,'• تم تحديث السورس')
 dofile('MODEDEV.lua')  
 end
@@ -2706,7 +2706,7 @@ keyboard.inline_keyboard = {
 {text = 'قناة السورس', url="t.me/moslslatrmadaan"},
 },
 {
-{text = 'مطور السورس', url="t.me/uu_iv"},
+{text = 'مطور السورس', url="t.me/el_pro_f"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -2844,7 +2844,7 @@ echo '*•━━━━━━━━━•*\n•{ مـده تـشغيـل الـس
 ]]):read('*all'))  
 end
 ------------------------------------------------------------------------------------------------------------
-if text == 'سونيك' or text == 'محمود ابوالمجد' or text == 'ابوالمجد' or text == 'sonic' then
+if text == 'البروف' or text == 'بروف' or text == 'محمد البروف' or text == 'مطور السورس' then
 local Text =[[
 مطور السورس . يمكنك التواصل معه عن طريق معرفه
 ]]
@@ -2852,7 +2852,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = 'سونيك 💌', url="t.me/uu_iv"},
+{text = 'البروف 💌', url="t.me/el_pro_f"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -2890,7 +2890,7 @@ keyboard.inline_keyboard = {
 {text = ' ● LittlePlane', url="t.me/gamee?game=LittlePlane"},{text = ' ● RollerDisco ', url="t.me/gamee?game=RollerDisco"}
 },
 {
-{text = 'مطور السـورس', url="t.me/uu_iv"},
+{text = 'مطور السـورس', url="t.me/el_pro_f"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3648,7 +3648,7 @@ if result.sender_user_id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "• لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1614375843) then
+if result.sender_user_id_ == tonumber(839224120) then
 send(msg.chat_id_, msg.id_, "•لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
@@ -3693,7 +3693,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "• لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(1614375843) then
+if result.id_ == tonumber(839224120) then
 send(msg.chat_id_, msg.id_, "•  لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
@@ -3724,7 +3724,7 @@ if userid == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "• لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(1614375843) then
+if result.id_ == tonumber(839224120) then
 send(msg.chat_id_, msg.id_, "•  لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
@@ -3764,7 +3764,7 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " لا تسطيع كتم البوت عام")
 return false 
 end
-if result.sender_user_id_ == tonumber(1614375843) then
+if result.sender_user_id_ == tonumber(839224120) then
 send(msg.chat_id_, msg.id_, "•لا يمكنك كتم مطور  السورس \n")
 return false 
 end
@@ -3800,7 +3800,7 @@ if tonumber(result.id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, "• لا تسطيع كتم البوت عام")
 return false 
 end
-if result.id_ == tonumber(1614375843) then
+if result.id_ == tonumber(839224120) then
 send(msg.chat_id_, msg.id_, "•  لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
@@ -3835,7 +3835,7 @@ if userid == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "• لا يمكنك الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1614375843) then
+if result.sender_user_id_ == tonumber(839224120) then
 send(msg.chat_id_, msg.id_, "•لا يمكنك كتم مطور  السورس \n")
 return false 
 end
@@ -5829,7 +5829,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒓𝒆𝒗𝒐𝒓 •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
+send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎?? 𝒓𝒆𝒗𝒐𝒓 •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
 end
 return false
 end
